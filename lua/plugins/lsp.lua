@@ -52,20 +52,20 @@ return {
           },
         },
 
-        omnisharp = {
-          cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) },
-          enable_editorconfig_support = true,
-          enable_import_completion = true,
-          organize_imports_on_format = true,
-          enable_msbuild_load_projects_on_demand = true,
-          enable_roslyn_analyzers = true,
-          handlers = {
-            ["textDocument/definition"] = function(...)
-              return require("omnisharp_extended").handler(...)
-            end,
-          },
-          filetypes = { "cs", "vb", "razor" },
-        },
+        -- omnisharp = {
+        --   cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) },
+        --   enable_editorconfig_support = true,
+        --   enable_import_completion = true,
+        --   organize_imports_on_format = true,
+        --   enable_msbuild_load_projects_on_demand = true,
+        --   enable_roslyn_analyzers = true,
+        --   handlers = {
+        --     ["textDocument/definition"] = function(...)
+        --       return require("omnisharp_extended").handler(...)
+        --     end,
+        --   },
+        --   filetypes = { "cs", "vb", "razor" },
+        -- },
       },
     },
   },
