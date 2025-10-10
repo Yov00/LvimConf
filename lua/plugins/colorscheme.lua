@@ -3,13 +3,19 @@ return {
   "olimorris/onedarkpro.nvim",
   "shaunsingh/nord.nvim",
   "sainnhe/everforest",
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "everforest",
+  --   },
+  -- },
+  "catppuccin/nvim",
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "everforest",
+      colorscheme = "catppuccin-frappe",
     },
   },
-  "catppuccin/nvim",
   "rebelot/kanagawa.nvim",
   {
     "AlexvZyl/nordic.nvim",

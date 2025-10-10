@@ -9,3 +9,9 @@ vim.keymap.set("n", "<C-Tab>", "<Cmd>bnext<CR>", { desc = "Next buffer" })
 vim.keymap.set("n", "<S-Tab>", "<Cmd>bprevious<CR>", { desc = "Previous buffer" })
 vim.keymap.set("n", "<C-Tab>", "gt", { desc = "Next tab" })
 vim.keymap.set("n", "<S-Tab>", "gT", { desc = "Previous tab" })
+
+-- vim.keymap.set("n", "<leader>ih", function()
+--   local enabled = vim.lsp.inlay_hint.is_enabled()
+--   vim.lsp.inlay_hint.enable(not enabled)
+-- end, { desc = "Toggle Inlay Hints" })
+--
